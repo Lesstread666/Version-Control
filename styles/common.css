@@ -21,7 +21,7 @@ body {
     height: 100px;
     padding: 0 100px;
     margin: 0;
-    background-color: chocolate;
+    background: linear-gradient(to bottom, #A5CC82, #00467F);
 }
 
 .header-logo a {
@@ -56,20 +56,37 @@ body {
 }
 
 .menu-bar a {
-    background-color: black;
-    border-radius: 10px;
-    text-decoration: none;
+    background-image: linear-gradient(to right, #3D7EAA 0%, #FFE47A 51%, #3D7EAA 100%)
+}
+
+.menu-bar a {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
     color: white;
-    padding: 10px;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    text-decoration: none;
     font-size: 1.5rem;
+}
+
+.menu-bar a:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .main {
     flex-grow: 1;
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
 }
 
 .footer {
     text-align: center;
     padding: 24px;
-    background-color: chocolate;
+    background: linear-gradient(to bottom, #A5CC82, #00467F);
 }
