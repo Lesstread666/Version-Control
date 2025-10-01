@@ -87,6 +87,7 @@ body {
 
 .footer {
     text-align: center;
+    text-transform: uppercase;
     padding: 24px;
     background: linear-gradient(to bottom, #A5CC82, #00467F);
 }
