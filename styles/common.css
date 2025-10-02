@@ -177,4 +177,9 @@ body {
         max-height: 500px;
         display: grid;
     }
+
+    .dropdown-icon,
+    .dropdown-menu {
+        display: block;
+    }
 }
