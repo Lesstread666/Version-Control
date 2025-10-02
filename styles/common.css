@@ -25,9 +25,13 @@ body {
     background: linear-gradient(to bottom, #A5CC82, #00467F);
 }
 
+.header-logo {
+    position: relative;
+}
+
 .header-logo a {
     text-decoration: none;
-    display: inline-block;
+    display: block;
 }
 
 .header h2 {
@@ -38,7 +42,13 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: translateX(0.5em);
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.dropdown-icon,
+.dropdown-menu {
+    display: none;
 }
 
 .header-navigation {
@@ -57,10 +67,6 @@ body {
 }
 
 .menu-bar a {
-    background-image: linear-gradient(to right, #3D7EAA 0%, #FFE47A 51%, #3D7EAA 100%)
-}
-
-.menu-bar a {
     margin: 10px;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -68,6 +74,7 @@ body {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
+    background-image: linear-gradient(to right, #3D7EAA 0%, #FFE47A 51%, #3D7EAA 100%);
     color: white;
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
@@ -101,4 +108,73 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:769px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 15px;
+        background: linear-gradient(to bottom, #A5CC82, #00467F);
+    }
+
+    .header-logo {
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+
+    .header h2 {
+        font-size: 3rem;
+        margin-bottom: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .header-navigation {
+        display: none;
+    }
+
+    .dropdown-icon {
+        background: linear-gradient(45deg, #f3f169 0%, #82f369 40%, #91cfff 100%);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+        display: inline-block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .dropdown-icon:hover {
+        transform: rotateX(180deg);
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+    }
+
+    .dropdown-menu a {
+        background-image: linear-gradient(to right, #3D7EAA 0%, #d5bf69 51%, #3D7EAA 100%);
+        color: rgba(17, 104, 43, 0.779);
+        box-shadow: 0 0 10px #81a739;
+        border-radius: 10px;
+    }
+
+    .dropdown-icon:hover+.dropdown-menu {
+        max-height: 500px;
+        display: grid;
+    }
 }
