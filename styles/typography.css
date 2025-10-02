@@ -38,6 +38,9 @@
     font-style: normal;
 }
 
+/* HOW TO USE:
+Pre styled font family for heading elements, you can override these and
+add other font related properties in your css */
 
 h1 {
     font-family: 'Lora Bold', Arial, Helvetica, sans-serif;
