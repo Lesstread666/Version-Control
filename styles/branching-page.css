@@ -1,0 +1,30 @@
+section {
+    padding: 1rem 0.5rem;
+}
+.section_title {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+
+}
+.section-subheading{
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.section_contents h3{
+    margin: 0.5rem 0rem;
+}
+
+.section_contents h4{
+    margin: 0.5rem 0rem;
+}
+
+.git_command{
+    font-family: 'Lora Bold';
+    color: #E1E6E5;
+    border-radius: 30px;
+    background-color: #606C38;
+    padding: 0.2rem 0.7rem;
+    margin: 0rem 0.2rem;
+}
