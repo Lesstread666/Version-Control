@@ -173,13 +173,8 @@ body {
         border-radius: 10px;
     }
 
-    .dropdown-mobile {
-        padding: 20px;
-    }
-
-    .dropdown-mobile:hover .dropdown-menu {
+    .dropdown-icon:hover+.dropdown-menu {
         max-height: 500px;
         display: grid;
     }
-
 }
