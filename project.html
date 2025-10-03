@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectPage</title>
+    <link rel="stylesheet" href="./styles/typography.css" />
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/project.css">
 </head>
+
 <body>
-     <header class="header">
+    <header class="header">
 
         <div class="header-logo">
             <a href="index.html" alt="Home Page title">
                 <h2>Version Control</h2>
             </a>
 
+            <div class="dropdown-mobile">
+                <div class="dropdown-icon">
+                    ^
+                </div>
+                <div class="dropdown-menu">
+                    <a href="project.html">Project</a>
+                    <a href="#">Changes</a>
+                    <a href="branching-page.html">Branching</a>
+                    <a href="#">About us</a>
+                </div>
+            </div>
         </div>
 
         <div class="header-navigation">
@@ -22,50 +36,54 @@
                 <ul class="menu-bar">
                     <li><a href="project.html">Project</a></li>
                     <li><a href="#">Changes</a></li>
-                    <li><a href="#">Branching</a></li>
+                    <li><a href="branching-page.html">Branching</a></li>
                     <li><a href="#">About us</a></li>
                 </ul>
             </nav>
         </div>
 
+
     </header>
 
     <main class="main">
         <div class="container">
-        <div class="box">
-        <h1>Project Page</h1>
+            <div class="box">
+                <h1>Project Page</h1>
 
-         <div class="box">
-        <h2>Why Remote Respositories Are Necessary</h2>
-        
-         <p>
-        Remote repositories are important because they allow projects to be stored online and accessed from anywhere. 
-      They act as a <strong> backup </strong>and make <strong>collaboration</strong> possible, 
-      since multiple developers can work on the same project at the same time. 
-      They also keep a full <strong>version history</strong> to track changes easily.
-       </p>
-        </div>
+                <div class="box">
+                    <h2>Why Remote Respositories Are Necessary</h2>
 
-        <div class="box">
+                    <p>
+                        Remote repositories are important because they allow projects to be stored online and accessed
+                        from anywhere.
+                        They act as a <strong> backup </strong>and make <strong>collaboration</strong> possible,
+                        since multiple developers can work on the same project at the same time.
+                        They also keep a full <strong>version history</strong> to track changes easily.
+                    </p>
+                </div>
 
-       <h2>Steps for Creating a Project on GitHub</h2>
+                <div class="box">
 
-       <ol>
-        <li>Log in to your GitHub account.</li>
-        <li>Click on the “+” icon in the top right corner and select <strong> New repository</strong>.</li>
-        <li>Enter a repository name (e.g., <em>MyResponsiveProject</em>).</li>
-        <li>Choose visibility (<strong></strong> Public</strong> or <strong> Private</strong>.)</li>
-        <li>Click <strong>Create repository</strong>.</li>
-        <li>Copy the repository URL e.g., <code>https://github.com/username/MyResponsiveProject.git</code></li>
-       </ol>
-       </div>
+                    <h2>Steps for Creating a Project on GitHub</h2>
 
-        <div class="box">
+                    <ol>
+                        <li>Log in to your GitHub account.</li>
+                        <li>Click on the “+” icon in the top right corner and select <strong> New repository</strong>.
+                        </li>
+                        <li>Enter a repository name (e.g., <em>MyResponsiveProject</em>).</li>
+                        <li>Choose visibility (<strong></strong> Public</strong> or <strong> Private</strong>.)</li>
+                        <li>Click <strong>Create repository</strong>.</li>
+                        <li>Copy the repository URL e.g.,
+                            <code>https://github.com/username/MyResponsiveProject.git</code></li>
+                    </ol>
+                </div>
 
-         <h2>Git Commands Needed</h2>
-         <h3>1. Create a Project Locally</h3>
+                <div class="box">
 
-        <pre>
+                    <h2>Git Commands Needed</h2>
+                    <h3>1. Create a Project Locally</h3>
+
+                    <pre>
 
             mkdir MyResponsiveProject
             cd MyResponsiveProject
@@ -76,24 +94,24 @@
 
         </pre>
 
-        <h3>2. Link a Local Repo to a Remote Repo</h3>
-        <pre>
+                    <h3>2. Link a Local Repo to a Remote Repo</h3>
+                    <pre>
             git remote add origin https://github.com/username/MyResponsiveProject.git
             git push -u origin main
         </pre>
-        </div>
+                </div>
 
-         <div class="box">
-        <h2>How Other People Can Contribute</h2>
-        <ul>
-            <li>Fork the repository on GitHub to create their own copy.</li>
-            <li>Clone the forked repository to their local computer.</li>
-            <li>Create a new branch and make changes.</li>
-            <li>Commit and push the changes to their forked repository.</li>
-            <li>Open a Pull Request (PR) to suggest merging their changes into the original project.</li>
-        </ul>
-        </div>
-        </div>
+                <div class="box">
+                    <h2>How Other People Can Contribute</h2>
+                    <ul>
+                        <li>Fork the repository on GitHub to create their own copy.</li>
+                        <li>Clone the forked repository to their local computer.</li>
+                        <li>Create a new branch and make changes.</li>
+                        <li>Commit and push the changes to their forked repository.</li>
+                        <li>Open a Pull Request (PR) to suggest merging their changes into the original project.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </main>
@@ -102,4 +120,5 @@
         <p>&copy;Team_Thunderbolts</p>
     </footer>
 </body>
+
 </html>
