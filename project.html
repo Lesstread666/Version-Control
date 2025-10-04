@@ -46,16 +46,11 @@
 
 
   </header>
-
   <main class="main">
     <h1>Project Page</h1>
     <div class="container">
-
-
-
       <section class="box">
         <h2>Why Remote Respositories Are Necessary</h2>
-
         <p>
           Remote repositories are important because they allow projects to be stored online and accessed
           from anywhere.
@@ -64,11 +59,8 @@
           They also keep a full <strong>version history</strong> to track changes easily.
         </p>
       </section>
-
       <section class="box">
-
         <h2>Steps for Creating a Project on GitHub</h2>
-
         <ul>
           <li>Log in to your GitHub account.</li>
           <li>Click on the “+” icon in the top right corner and select <strong> New repository</strong>.
@@ -77,34 +69,37 @@
           <li>Choose visibility (<strong>Public</strong> or <strong> Private</strong>.)</li>
           <li>Click <strong>Create repository</strong>.</li>
           <li>Copy the repository URL e.g.,
-            <code>https://github.com/username/MyResponsiveProject.git</code>
+            <pre>https://github.com/username/MyResponsiveProject.git</pre>
           </li>
         </ul>
       </section>
-
       <section class="box">
-
         <h2>Git Commands Needed</h2>
         <h3>1. Create a Project Locally</h3>
-
         <pre>
 
             mkdir MyResponsiveProject
+
             cd MyResponsiveProject
+
             git init 
+
             echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
+
             git add index.html 
+
             git commit -m "Initial commit with index page"
 
         </pre>
-
         <h3>2. Link a Local Repo to a Remote Repo</h3>
         <pre>
+
             git remote add origin https://github.com/username/MyResponsiveProject.git
+
             git push -u origin main
+
         </pre>
       </section>
-
       <section class="box">
         <h2>How Other People Can Contribute</h2>
         <ul>
@@ -115,11 +110,8 @@
           <li>Open a Pull Request (PR) to suggest merging their changes into the original project.</li>
         </ul>
       </section>
-
     </div>
-
   </main>
-
   <footer class="footer">
     <p>&copy;Team_Thunderbolts</p>
   </footer>
