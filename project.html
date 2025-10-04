@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="styles/project.css">
   <link rel="stylesheet" href="./styles/common-mainbody.css" /> <!--css for main body all pages-->
 </head>
-</head>
 
 <body>
   <header class="header">
@@ -50,7 +49,7 @@
     <h1>Project Page</h1>
     <div class="container">
       <section class="box">
-        <h2>Why Remote Respositories Are Necessary</h2>
+        <h2>Why Remote Repositories Are Necessary</h2>
         <p>
           Remote repositories are important because they allow projects to be stored online and accessed
           from anywhere.
@@ -77,27 +76,23 @@
         <h2>Git Commands Needed</h2>
         <h3>1. Create a Project Locally</h3>
         <pre>
+mkdir MyResponsiveProject
 
-            mkdir MyResponsiveProject
+cd MyResponsiveProject
 
-            cd MyResponsiveProject
+git init
 
-            git init 
+echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
 
-            echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
+git add index.html
 
-            git add index.html 
-
-            git commit -m "Initial commit with index page"
-
+git commit -m "Initial commit with index page"
         </pre>
         <h3>2. Link a Local Repo to a Remote Repo</h3>
         <pre>
+git remote add origin https://github.com/username/MyResponsiveProject.git
 
-            git remote add origin https://github.com/username/MyResponsiveProject.git
-
-            git push -u origin main
-
+git push -u origin main
         </pre>
       </section>
       <section class="box">

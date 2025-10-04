@@ -45,16 +45,12 @@
     </div>
 
   </header>
-
   <main class="main">
     <h1>Branching page</h1>
-    <h3> This page tells us about the importance of making a branch and the git
+    <h1 class="sub-title"> This page tells us about the importance of making a branch and the git
       commands
-      on how to create and close or delete a local or remote branch</h3>
+      on how to create and close or delete a local or remote branch</h1>
     <div class="container">
-
-
-
       <section class="box">
         <h3>Why is making a branch important?</h3>
         <h4>There are several reasons as to why it is vital to make branches, some of which are :</h4>
@@ -82,7 +78,6 @@
           it and test it , and who knows, even contribute to it.
         </p>
       </section>
-
       <section class="box">
         <h3>What are the git commands to create and close a branch?</h3>
         <h4> To create a new local branch from main / develop branch. It is always a good idea
@@ -90,26 +85,23 @@
           branch from there.
         </h4>
         <h4>To create a new branch locally use </h4>
-        <p> In your terminal, write:
+        <p>In your terminal, write:</p>
         <pre>git branch nameofthebranch</pre>
-        or
-        <pre>git checkout -b nameofthebranch</pre> to create and switch to this
-        newly created branch.
-        </p>
-        <h4>To close or delete a local branch </h4>
-        <p>In your terminal, write:
-        <pre>git branch -d nameofthebranch</pre>one might need to use
-        <pre> -D </pre>
-        if there are unmerged changes.
-        </p>
-        <h4>To close or delete a remote branch </h4>
-        <p>In your terminal, write:
+        <p>or</p>
+        <pre>git checkout -b nameofthebranch</pre>
+        <p>to create and switch to this newly created branch.</p>
+        <h4>To close or delete a local branch</h4>
+        <p>In your terminal, write:</p>
+        <pre>git branch -d nameofthebranch</pre>
+        <p>one might need to use</p>
+        <pre>-D</pre>
+        <p>if there are unmerged changes.</p>
+        <h4>To close or delete a remote branch</h4>
+        <p>In your terminal, write:</p>
         <pre>git push origin --delete nameofthebranch</pre>
-        </p>
       </section>
     </div>
   </main>
-
   <footer class="footer">
     <p>&copy;Team_Thunderbolts</p>
   </footer>

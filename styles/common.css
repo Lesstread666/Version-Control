@@ -91,7 +91,7 @@ body {
 .main {
   flex-grow: 1;
   padding: 20px;
-  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  background-image: linear-gradient(-60deg, #16a085 0%, #88c070 60%, #f4d03f 100%);
 }
 
 .footer {
