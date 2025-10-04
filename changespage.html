@@ -41,9 +41,47 @@
         </div>
 
     </header>
-    <h1>Changing Page is in Progress</h1>
+    <main class="main">
+      <div class="container">
+
+        <div class="box">
+          <h1>Changes Page</h1>
+        </div>
+
+        <div class="box">
+          <h2>Process of Adding Code to an Existing Repository</h2>
+          <p>Once a repository is created, we can continue to improve it by adding new code or updating existing files.  
+          The process generally involves three main steps:
+          </p>
+          <ol>
+            <li><strong>Stage</strong>the updated files so Git knows which changes to track.</li>
+            <li><strong>Commit</strong>the changes with a clear message that describes what was updated.</li>
+            <li><strong>Push</strong> the changes to the remote repository (e.g., GitHub) so others can see and use the updated code.</li>
+          </ol>
+        </div>
+
+        <div class="box">
+          <h2>Git Commands for Making Changes</h2>
+          <h3>1. Stage Changes</h3>
+          <pre><code>git add filename.html</code></pre>
+          <p>Stage a specific file. To stage all changes at once:</p>
+          <pre><code>git add .</code></pre>
+
+          <h3>2. Commit Changes</h3>
+          <pre><code>git commit -m "Updated project page with new instructions"</code></pre>
+          <p>
+            The <code>-m</code>flag lets you add a message to explain what was changed.
+          </p>
+           
+          <h3>3. Push Changes</h3>
+          <pre><code>git push origin main</code></pre>
+          <p>
+            This sends your committed changes to the remote repository on GitHub.
+          </p>
+        </div>
+    </div>
   </main>
-   <footer class="footer">
+    <footer class="footer">
         <p>&copy;Team_5 (Thunderbolts*)</p>
     </footer>
 </body>
