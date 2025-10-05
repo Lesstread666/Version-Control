@@ -90,6 +90,10 @@ code
     white-space: pre-wrap;
     word-break: break-word;
 }
+.code_title 
+{
+    padding: 4px;
+}
 
 
 @media (max-width: 768px)
