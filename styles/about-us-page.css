@@ -21,7 +21,7 @@
     flex: 1.5;
 }
 
-.wrapper {
+.intro_wrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -29,11 +29,11 @@
 }
 
 .about_us_subheading,
-.wrapper h3 {
+.intro_wrapper h3 {
     text-align: center;
 }
 
-.wrapper p,
+.intro_wrapper p,
 .about_us_section p {
     text-align: justify;
 }
@@ -54,23 +54,27 @@
     padding: 1rem;
 }
 
-.about_us_contents h2,
-.about_us_contents img,
-.about_us_contents p:last-of-type {
+.about_us_contents img {
     align-self: center;
 }
 
-.about_us_contents
-h3,
-p {
-    margin-bottom: 0.5rem;
+.contents_wrapper h2,
+.contents_wrapper p:last-of-type {
+    text-align: center;
 }
 
-.about_us_contents h2 {
+
+.contents_wrapper
+h3 ,p
+{
+    margin-bottom: 1rem;
+}
+
+.contents_wrapper h2 {
     margin: 0.5rem 0rem;
 }
 
-.about_us_contents p:last-of-type,
+.contents_wrapper p:last-of-type,
 .team_name {
     font-family: 'Kaushan Script';
     font-size: 1.2rem;
@@ -79,13 +83,6 @@ p {
 
 .team_name {
     font-size: 1rem;
-}
-
-.box {
-    border-radius: 12px;
-    background-image: linear-gradient(35.7deg, rgba(105, 238, 218, 1) 31.2%, rgba(114, 80, 228, 1) 81.4%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    padding: 25px 30px;
 }
 
 .btn {
@@ -109,7 +106,6 @@ p {
     }
 
     .about_us_contents {
-        background-color: #FCFCFC;
         flex: 0 0 calc((100% / 3) - 0.5rem);
     }
 
