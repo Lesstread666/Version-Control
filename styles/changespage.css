@@ -15,10 +15,7 @@ body
     padding: 0;
     font-family: arial, sans-serif;
     line-height: 1.6;
-    
-    /*background: #f9f9f9ff;*/
     color: #333;
-
 }
 
 .container 
@@ -31,33 +28,20 @@ body
     margin: auto;
     padding: 20px;
     gap: 20px;
-   /* background: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
 }
-
-
 
 .box 
 {
-    
-    background: linear-gradient(to bottom, #A5CC82, #00467F);
     padding: 20px;
     border-radius: 8px;
-    /*color: #fff;*/
-     color: #2c003e;
-    
-  
-
+    color: #2c003e;
 }
 
 h1, h2, h3 
 {
     color:#222;
     margin-bottom: 10px;
-
 }
-
-
 
 ol, ul 
 {
@@ -75,11 +59,7 @@ pre
     font-size: 14px;
     white-space: pre-wrap;
     word-break: break-word;
-    
-
 }
-
-
 
 code
 {
