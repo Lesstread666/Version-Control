@@ -94,6 +94,11 @@ body {
   display: block;
   text-decoration: none;
 }
+.menu-bar li a.active 
+{
+  color: darkgreen;
+  font-weight: bold;
+}
 
 .menu-bar a:hover {
   background-position: right center;
