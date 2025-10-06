@@ -30,6 +30,8 @@ h1 {
   font-size: 3rem;
   color: var(--title-color);
   background: var(---title-background-color);
+  background-clip: text;
+  /* Made acceptable for different browsers */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,6 +40,8 @@ h1 {
   font-size: 1rem;
   color: var(--title-color);
   background: var(---title-background-color);
+  background-clip: text;
+  /* Made acceptable for different browsers */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
