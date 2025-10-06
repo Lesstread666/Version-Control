@@ -59,6 +59,10 @@ body {
 .dropdown-menu {
   display: none;
 }
+.dropdown-menu a 
+{
+  padding: 10px 0;
+}
 
 .header-navigation {
   margin: 0;
