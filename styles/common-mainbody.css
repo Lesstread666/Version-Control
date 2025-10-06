@@ -1,0 +1,117 @@
+:root {
+  ---title-background-color: linear-gradient(90deg, #16a085 0%, #117A66 80%);
+  --title-color: #1F5A52;
+  --box-background-color: linear-gradient(35.7deg, #69eeda 0%, #7264e4 100%);
+  --box-shadow-color: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 40px 20px;
+  gap: 40px;
+  background-image: var(--main-body-background-color);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-family: 'Kaushan Script';
+  font-size: 3rem;
+  color: var(--title-color);
+  background: var(---title-background-color);
+  background-clip: text;
+  /* Made acceptable for different browsers */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: var(--title-color);
+  background: var(---title-background-color);
+  background-clip: text;
+  /* Made acceptable for different browsers */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto 40px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  background-image: var(--box-background-color);
+  box-shadow: var(--box-shadow-color);
+}
+
+.box h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-family: 'Lora SemiboldItalic';
+  margin-left: 0.5rem;
+}
+
+.box p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+span {
+  color: white;
+  background: black;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.box li::before {
+  content: "✨";
+  position: absolute;
+  left: -10px;
+}
+
+pre {
+  margin: 20px 0;
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.5;
+  overflow: auto;
+}

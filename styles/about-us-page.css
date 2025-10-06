@@ -1,0 +1,119 @@
+.about_us_intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0rem 2rem;
+}
+
+.about_us_title {
+  color: #606C38;
+  font-family: 'Kaushan Script';
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about_us_image {
+  width: 100%;
+  flex: 1.5;
+}
+
+.intro_wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about_us_subheading,
+.intro_wrapper h3 {
+  text-align: center;
+}
+
+.intro_wrapper p,
+.about_us_section p {
+  text-align: justify;
+}
+
+.about_us_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.about_us_contents {
+  border: 2px solid #606C38;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.about_us_contents img {
+  align-self: center;
+}
+
+.contents_wrapper h2,
+.contents_wrapper p:last-of-type {
+  text-align: center;
+}
+
+
+.contents_wrapper h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.contents_wrapper h2 {
+  margin: 0.5rem 0rem;
+}
+
+.contents_wrapper p:last-of-type,
+.team_name {
+  font-family: 'Kaushan Script';
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.team_name {
+  font-size: 1rem;
+}
+
+.btn {
+  border: 2px solid #606C38;
+  color: #606C38;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.image {
+  width: 50%;
+}
+
+@media only screen and (min-width:769px) {
+  .about_us_intro {
+    flex-direction: row;
+  }
+
+  .about_us_image {
+    width: 50%;
+  }
+
+  .about_us_contents {
+    flex: 0 0 calc((100% / 3) - 0.5rem);
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+  }
+
+}

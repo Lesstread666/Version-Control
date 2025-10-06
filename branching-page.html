@@ -2,112 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./styles/typography.css" /> <!--css for font,make sure to add this to your page -->
-    <link rel="stylesheet" href="./styles/common.css" />
-    <!--common css for header and footer, make sure to add this to your page-->
-    <link rel="stylesheet" href="./styles/branching-page.css" /> <!--css for branching page-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="icon" href="assets/icons/favicon.ico">
+  <link rel="stylesheet" href="./styles/typography.css" />
+  <link rel="stylesheet" href="./styles/common-header-footer.css" />
+  <link rel="stylesheet" href="./styles/common-mainbody.css" />
 </head>
 
 <body>
-    <header class="header">
+  <header class="header">
 
-        <div class="header-logo">
-            <a href="index.html" alt="Home Page title">
-                <h2>Version Control</h2>
-            </a>
+    <div class="header-logo">
+      <a href="index.html" alt="Home Page title">
+        <h2>Version Control</h2>
+      </a>
 
-            <div class="dropdown-mobile">
-                <div class="dropdown-icon">
-                    ^
-                </div>
-                <div class="dropdown-menu">
-                    <a href="project.html">Project</a>
-                    <a href="#">Changes</a>
-                    <a href="branching-page.html">Branching</a>
-                    <a href="#">About us</a>
-                </div>
-            </div>
+      <div class="dropdown-mobile">
+        <div class="dropdown-icon">
+          ^
         </div>
-
-        <div class="header-navigation">
-            <nav class="navigation">
-                <ul class="menu-bar">
-                    <li><a href="project.html">Project</a></li>
-                    <li><a href="#">Changes</a></li>
-                    <li><a href="branching-page.html">Branching</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </nav>
+        <div class="dropdown-menu">
+          <a href="project.html">Project</a>
+          <a href="changespage.html">Changes</a>
+          <a href="branching-page.html">Branching</a>
+          <a href="about-us-page.html">About us</a>
         </div>
+      </div>
+    </div>
 
-    </header>
+    <div class="header-navigation">
+      <nav class="navigation">
+        <ul class="menu-bar">
+          <li><a href="project.html">Project</a></li>
+          <li><a href="changespage.html">Changes</a></li>
+          <li><a href="branching-page.html">Branching</a></li>
+          <li><a href="about-us-page.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <main class="main">
-        <div class="section_contents">
-            <h1 class="section_title">Branching page</h1>
-            <h2 class="section_subheading"> This page tells us about the importance of making a branch and the git
-                commands
-                on how to create and close or delete a local or remote branch</h2>
-
-            <section class="branch_importance">
-                <h3>Why is making a branch important?</h3>
-                <h4>There are several reasons as to why it is vital to make branches, some of which are :</h4>
-                <h4>It makes your code base safe</h4>
-                <p>Creating a branch would enable us to test our ideas. It gives us a copy of the code, wherein we can
-                    test
-                    our ideas without affecting the main source code</p>
-                <h4>It is a good way to organize work</h4>
-                <p>It is recommended to create a branch for a specific task may it be a feature, bug fix or even ideas
-                    that we want to experiment on!Think of a branch as a record of what was done and why</p>
-                <h4>Makes collaboration easier</h4>
-                <p>It allows multiple developers to contribute without conflicts. It prohibits every member from working
-                    on the same code directly, which can potentially
-                    leads to things getting messy. By creating a branch, each person has their own work environment
-                    where they can add or change features
-                    and later on merge to the main source code after testing.
-                </p>
-                <h4>Easier to test</h4>
-                <p>It is easy for the team to test changes in a branch before merging it into the main source code.
-                    This is important to easily detect mistakes early , and avoid a huge mess in the main project.
-                </p>
-                <h4>Remote branches let others see your work</h4>
-                <p>As a local branch is just on ones computer. Creating a remote branch by pushing the local branch to
-                    a remote branch like GitHub allows the other members of the team or others who are interested to see
-                    it and test it , and who knows, even contribute to it.
-                </p>
-            </section>
-
-            <section class="branching_commands">
-                <h3>What are the git commands to create and close a branch?</h3>
-                <h4> To create a new local branch from main / develop branch. It is always a good idea
-                    to type git checkout main or git checkout develop , to ensure that you will be creating a local
-                    branch from there.
-                </h4>
-                <h4>To create a new branch locally use </h4>
-                <p> In your terminal, write
-                    <span class="git_command">git branch nameofthebranch</span>
-                    or <span class="git_command">git checkout -b nameofthebranch</span> to create and switch to this
-                    newly created branch.
-                </p>
-                <h4>To close or delete a local branch </h4>
-                <p>In your terminal, write
-                    <span class="git_command">git branch -d nameofthebranch</span> , one might need to use <span
-                        class="git_command"> -D </span>
-                    if there are unmerged changes.
-                </p>
-                <h4>To close or delete a remote branch </h4>
-                <p>In your terminal, write <span class="git_command">git push origin --delete
-                        nameofthebranch</span></p>
-            </section>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <p>&copy;Team_Thunderbolts</p>
-    </footer>
+  </header>
+  <main class="main">
+    <h1>Branching page</h1>
+    <h1 class="sub-title"> This page tells us about the importance of making a branch and the git
+      commands
+      on how to create and close or delete a local or remote branch</h1>
+    <div class="container">
+      <section class="box">
+        <h3>Why is making a branch important?</h3>
+        <h4>There are several reasons as to why it is vital to make branches, some of which are :</h4>
+        <h4>It makes your code base safe</h4>
+        <p>Creating a branch would enable us to test our ideas. It gives us a copy of the code, wherein we can
+          test
+          our ideas without affecting the main source code</p>
+        <h4>It is a good way to organize work</h4>
+        <p>It is recommended to create a branch for a specific task may it be a feature, bug fix or even ideas
+          that we want to experiment on!Think of a branch as a record of what was done and why</p>
+        <h4>Makes collaboration easier</h4>
+        <p>It allows multiple developers to contribute without conflicts. It prohibits every member from working
+          on the same code directly, which can potentially
+          leads to things getting messy. By creating a branch, each person has their own work environment
+          where they can add or change features
+          and later on merge to the main source code after testing.
+        </p>
+        <h4>Easier to test</h4>
+        <p>It is easy for the team to test changes in a branch before merging it into the main source code.
+          This is important to easily detect mistakes early , and avoid a huge mess in the main project.
+        </p>
+        <h4>Remote branches let others see your work</h4>
+        <p>As a local branch is just on ones computer. Creating a remote branch by pushing the local branch to
+          a remote branch like GitHub allows the other members of the team or others who are interested to see
+          it and test it , and who knows, even contribute to it.
+        </p>
+      </section>
+      <section class="box">
+        <h3>What are the git commands to create and close a branch?</h3>
+        <h4> To create a new local branch from main / develop branch. It is always a good idea
+          to type git checkout main or git checkout develop , to ensure that you will be creating a local
+          branch from there.
+        </h4>
+        <h4>To create a new branch locally use </h4>
+        <p>In your terminal, write:</p>
+        <pre>git branch nameofthebranch</pre>
+        <p>or</p>
+        <pre>git checkout -b nameofthebranch</pre>
+        <p>to create and switch to this newly created branch.</p>
+        <h4>To close or delete a local branch</h4>
+        <p>In your terminal, write:</p>
+        <pre>git branch -d nameofthebranch</pre>
+        <p>one might need to use</p>
+        <pre>-D</pre>
+        <p>if there are unmerged changes.</p>
+        <h4>To close or delete a remote branch</h4>
+        <p>In your terminal, write:</p>
+        <pre>git push origin --delete nameofthebranch</pre>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy;Team_Thunderbolts</p>
+  </footer>
 </body>
 
 </html>
