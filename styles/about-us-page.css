@@ -92,7 +92,28 @@ p {
 }
 
 .image {
+	animation: float 6s ease-in-out infinite;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+  margin-top: 1rem;
+  overflow: hidden;
   width: 50%;
+  height: auto;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 @media only screen and (min-width:769px) {
@@ -110,6 +131,7 @@ p {
 
   .image {
     width: 100%;
+    height: 600px;
   }
 
   .btn {
