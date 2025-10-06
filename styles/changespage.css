@@ -28,11 +28,10 @@ body
     margin: auto;
     padding: 20px;
     gap: 20px;
- }
+}
 
 .box 
 {
- 
     padding: 20px;
     border-radius: 8px;
     color: #2c003e;
@@ -42,7 +41,6 @@ h1, h2, h3
 {
     color:#222;
     margin-bottom: 10px;
-
 }
 
 ol, ul 
@@ -60,8 +58,7 @@ pre
     overflow: auto;
     font-size: 14px;
     white-space: pre-wrap;
-    word-break: break-word;   
-
+    word-break: break-word;
 }
 
 code
@@ -72,6 +69,10 @@ code
     border-radius: 4px;
     white-space: pre-wrap;
     word-break: break-word;
+}
+.code_title 
+{
+    padding: 4px;
 }
 
 

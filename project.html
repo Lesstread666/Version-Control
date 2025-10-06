@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ProjectPage</title>
+    <link rel="icon" href="assets/icons/favicon.ico">
     <link rel="stylesheet" href="./styles/typography.css" />
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/project.css">
@@ -20,11 +21,11 @@
 
             <div class="dropdown-mobile">
                 <div class="dropdown-icon">
-                    ^
+                    
                 </div>
                 <div class="dropdown-menu">
                     <a href="project.html">Project</a>
-                    <a href="#">Changes</a>
+                    <a href="changespage.html">Changes</a>
                     <a href="branching-page.html">Branching</a>
                     <a href="about-us-page.html">About us</a>
                 </div>
@@ -35,7 +36,7 @@
             <nav class="navigation">
                 <ul class="menu-bar">
                     <li><a href="project.html">Project</a></li>
-                    <li><a href="#">Changes</a></li>
+                    <li><a href="changespage.html">Changes</a></li>
                     <li><a href="branching-page.html">Branching</a></li>
                     <li><a href="about-us-page.html">About us</a></li>
                 </ul>
@@ -49,7 +50,7 @@
                 <h1>Project Page</h1>
 
                 <div class="box">
-                    <h2>Why Remote Respositories Are Necessary</h2>
+                    <h2>Why Remote Repositories Are Necessary</h2>
 
                     <p>
                         Remote repositories are important because they allow projects to be stored online and accessed
@@ -82,21 +83,19 @@
                     <h2>Git Commands Needed</h2>
                     <h3>1. Create a Project Locally</h3>
 
-                    <pre>
-
-            mkdir MyResponsiveProject
-            cd MyResponsiveProject
-            git init 
-            echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
-            git add index.html 
-            git commit -m "Initial commit with index page"
-
+        <pre>
+           mkdir MyResponsiveProject
+           cd MyResponsiveProject
+           git init 
+           echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
+           git add index.html 
+           git commit -m "Initial commit with index page"
         </pre>
 
-                    <h3>2. Link a Local Repo to a Remote Repo</h3>
-                    <pre>
-            git remote add origin https://github.com/username/MyResponsiveProject.git
-            git push -u origin main
+        <h3>2. Link a Local Repo to a Remote Repo</h3>
+        <pre>
+           git remote add origin https://github.com/username/MyResponsiveProject.git
+           git push -u origin main
         </pre>
                 </div>
 
