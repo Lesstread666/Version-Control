@@ -36,16 +36,6 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.sub-title {
-  font-size: 1rem;
-  color: var(--title-color);
-  background: var(---title-background-color);
-  background-clip: text;
-  /* Made acceptable for different browsers */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .box {
   max-width: 800px;
   width: 100%;
