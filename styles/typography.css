@@ -1,41 +1,41 @@
 @font-face {
-    font-family: 'Kaushan Script';
-    src: url(../fonts/KaushanScript-Regular.woff2) format('woff2'),
-        url(../fonts/KaushanScript-Regular.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Kaushan Script';
+  src: url(../fonts/KaushanScript-Regular.woff2) format('woff2'),
+    url(../fonts/KaushanScript-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lora Bold';
-    src: url(../fonts/Lora-Bold.woff2) format('woff2'),
-        url(../fonts/Lora-Bold.woff) format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Lora Bold';
+  src: url(../fonts/Lora-Bold.woff2) format('woff2'),
+    url(../fonts/Lora-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lora SemiBoldItalic';
-    src: url(../fonts/Lora-SemiBoldItalic.woff2) format('woff2'),
-        url(../fonts/Lora-SemiBoldItalic.woff) format('woff');
-    font-weight: 600;
-    font-style: italic;
+  font-family: 'Lora SemiBoldItalic';
+  src: url(../fonts/Lora-SemiBoldItalic.woff2) format('woff2'),
+    url(../fonts/Lora-SemiBoldItalic.woff) format('woff');
+  font-weight: 600;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Lora Medium';
-    src: url(../fonts/Lora-Medium.woff2) format('woff2'),
-        url(../fonts/Lora-Medium.woff) format('woff');
-    font-weight: 500;
-    font-style: normal;
+  font-family: 'Lora Medium';
+  src: url(../fonts/Lora-Medium.woff2) format('woff2'),
+    url(../fonts/Lora-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Lora Regular';
-    src: url(../fonts/Lora-Regular.woff2) format('woff2'),
-        url(../fonts/Lora-Regular.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Lora Regular';
+  src: url(../fonts/Lora-Regular.woff2) format('woff2'),
+    url(../fonts/Lora-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* HOW TO USE:
@@ -43,25 +43,25 @@ Pre styled font family for heading elements, you can override these and
 add other font related properties in your css */
 
 h1 {
-    font-family: 'Lora Bold', Arial, Helvetica, sans-serif;
+  font-family: 'Lora Bold', Arial, Helvetica, sans-serif;
 }
 
 h2 {
-    font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+  font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
 }
 
 h3 {
-    font-family: 'Lora SemiboldItalic', Arial, Helvetica, sans-serif;
+  font-family: 'Lora SemiboldItalic', Arial, Helvetica, sans-serif;
 }
 
 h4 {
-    font-family: 'Lora Medium', Arial, Helvetica, sans-serif;
+  font-family: 'Lora Medium', Arial, Helvetica, sans-serif;
 }
 
 p {
-    font-family: 'Lora Regular', Arial, Helvetica, sans-serif;
+  font-family: 'Lora Regular', Arial, Helvetica, sans-serif;
 }
 
 a {
-    font-family: 'Lora Semibold', Arial, Helvetica, sans-serif;
+  font-family: 'Lora Semibold', Arial, Helvetica, sans-serif;
 }
