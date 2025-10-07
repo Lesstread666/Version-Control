@@ -30,6 +30,13 @@ body {
   padding: 20px 40px;
   margin: 0;
   background: var(--header-footer-background-color);
+  width: 100%;
+  top:0;
+  z-index: 100;
+  position: sticky;
+  
+  
+
 }
 
 .header-logo {
@@ -59,10 +66,16 @@ body {
 .dropdown-menu {
   display: none;
 }
+.dropdown-menu a 
+{
+  padding: 10px 0;
+}
 
 .header-navigation {
   margin: 0;
 }
+
+
 
 .menu-bar {
   display: flex;
@@ -89,6 +102,11 @@ body {
   border-radius: 10px;
   display: block;
   text-decoration: none;
+}
+.menu-bar li a.active 
+{
+  color: darkgreen;
+  font-weight: bold;
 }
 
 .menu-bar a:hover {
