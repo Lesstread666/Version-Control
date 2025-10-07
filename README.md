@@ -4,11 +4,27 @@ We are **Team Thunderbolts**  and welcome to our **Git Guide** project!
 
 This is a collaborative project created by our team to help beginners understand and use **_Git Commands_** and **_Github_** effectively.
 
+## 🧭 Table of Contents
+- [Live Demo](#-live-demo)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Team Members](#-team-members)
+- [How To Contribute](#-how-to-contribute)
+- [Future Improvements](#-future-improvements)
+- [Acknowledgements](#-acknowledgements)
+- [License](#-license)
+
 ## 🌐 Live Demo
 
 🔗 Check out the live web page here:
 
 👉 [Team Thunderbolts Git Guide]()
+
+## 🧰 Tech Stack
+- 🖥️ **HTML5** – For pages and contents structure
+- 🎨 **CSS3** - For styling , layout and responsiveness
+- 🌩️ **Git & GitHub** - For version control and collaboration
+
 
 ## 📁 Project Structure
 
@@ -55,11 +71,15 @@ git push origin improve-feature
 
 💬 _We will review your PR as soon a possible_ 😊
 
+## 🚀 Future Improvements
+- ⏳ Add Javascript for interactivity 
+- ⏳ Include more examples or even screenshots / walk through videos
+
+## 📜 Acknowledgements
+A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for sharing her wisdom about Version Control to us! Let us make learning Git fun and easy for everyone. 😊🙌
+
 ## 🧾 License
 
 📜 This project is open-source and available under the MIT License.
-
-## 📜 Acknowledgements
-A big thanks to everyone who shares feedback or uses our Git Guide! Let us make learning Git fun and easy for everyone. 😊🙌
 
 
