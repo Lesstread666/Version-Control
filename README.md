@@ -10,13 +10,11 @@ This is a collaborative project created by our team to help beginners understand
 
 👉 [Team Thunderbolts Git Guide]()
 
-
-
 ## 📁 Project Structure
 
 - ` 🗂️ Assets folder ` - Contains both icon folder and images folder
-- ` 🔤 Fonts folder ` - Contains our fonts used throughout the project
-- ` 🎨 Styles folder ` - Contains all our css files for styling the pages
+- ` 🔤 Fonts folder ` - Contains the fonts used throughout the project
+- ` 🎨 Styles folder ` - Contains all the css files for styling the pages
 - `🏠 index.hmtl ` - Home page explaining what Version Control is and its importance
 - `🧱 project.html ` - Explains how to create a local project and link it to Github( remote repository setup)
 - `🧩 changespage.hmtl ` - Explains the process of adding code to an existing remote repository and key Git commands
@@ -39,12 +37,21 @@ Meet the creators of **Team Thunderbolts** 💥
 We love community contributions! Here is how you can help improve this project:
 
 1. **Fork** the repository
-2. **Clone** your fork
-3. **Create** a new branch
-4. **Make** your changes
-5. **Commit** your changes
-6. **Push** to your branch
-7. **Submit** a Pull Request. Click Compare & Pull Request and describe your contribution.
+2. **Create** a new branch
+```bash 
+ git checkout -b improve-feature
+```
+3. **Make** the appropriate changes and add changes to reflect the changes made
+4. **Commit** your changes
+```bash 
+git commit -am "Improve feature"
+```
+5. **Push** to your branch
+```bash 
+git push origin improve-feature
+```
+
+6. **Submit** a Pull Request. Click Compare & Pull Request and describe your contribution.
 
 💬 _We will review your PR as soon a possible_ 😊
 
