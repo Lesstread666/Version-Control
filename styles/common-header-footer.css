@@ -136,13 +136,13 @@ body {
 .back-to-top 
 {
   position: fixed;
-  bottom: 40px;
-  right: calc(40px + 60px);
+  bottom: 20px;
+  right: calc(40px + 0px);
   background: #333;
   color: white;
-  padding: 12px 16px;
+  padding: 0 12px;
   border-radius: 20%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-decoration: none;
   font-weight: bold;
   opacity: 0.7;
@@ -222,4 +222,10 @@ body {
     max-height: 500px;
     display: grid;
   }
+
+  .back-to-top 
+{
+  padding: 0 8px;
+  font-size: 1.5rem;
+}
 }
