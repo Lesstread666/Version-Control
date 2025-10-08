@@ -13,6 +13,7 @@
 .about-us-image {
   width: 100%;
   flex: 1.5;
+  border-radius: 10px;
 }
 
 .intro-wrapper {
@@ -45,6 +46,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
+  z-index: -3;
 }
 
 .about-us-contents img,
@@ -52,14 +54,61 @@
   align-self: center;
 }
 
-.image {
-  animation: float 6s ease-in-out infinite;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  height: auto;
+.image-wrapper {
+  position: relative;
+  display: inline-block;
   margin-top: 1rem;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --float {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherit: false;
+}
+
+.image-wrapper::after,
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  background: conic-gradient(from var(--angle), rgb(255, 0, 170), rgb(247, 0, 255), rgb(123, 0, 255));
+  z-index: -2;
+  transform: translateY(var(--float)) rotate(var(--angle));
+  animation: float 6s ease-in-out infinite, spin 5s linear infinite;
+}
+
+.image-wrapper::before {
+  filter: blur(2rem);
+  opacity: 0.7;
+  transform: translateY(var(--float)) rotate(var(--angle)) scale(1.1);
+}
+
+.image {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  height: auto;
   overflow: hidden;
-  transform: translatey(0px);
-  width: 80%;
+  position: relative;
+  z-index: -1;
+  transform: translateY(var(--float));
+  animation: float 6s ease-in-out infinite;
 }
 
 .contents-wrapper p:last-of-type {
@@ -127,6 +176,16 @@ p {
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
   }
 }
 
