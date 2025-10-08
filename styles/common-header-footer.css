@@ -29,12 +29,9 @@ body {
   margin: 0;
   background: var(--header-footer-background-color);
   width: 100%;
-  top:0;
+  top: 0;
   z-index: 100;
   position: sticky;
-  
-  
-
 }
 
 .header-logo {
@@ -64,16 +61,14 @@ body {
 .dropdown-menu {
   display: none;
 }
-.dropdown-menu a 
-{
+
+.dropdown-menu a {
   padding: 10px 0;
 }
 
 .header-navigation {
   margin: 0;
 }
-
-
 
 .menu-bar {
   display: flex;
@@ -101,15 +96,15 @@ body {
   display: block;
   text-decoration: none;
 }
-.menu-bar li a.active 
-{
-  color: darkgreen;
+
+.menu-bar li a.active {
+  color: rgb(236, 37, 236);
   font-weight: bold;
 }
 
 .menu-bar a:hover {
   background-position: right center;
-  color: rgb(241, 110, 241);
+  color: rgb(237, 127, 237);
   text-decoration: none;
 }
 
@@ -130,8 +125,8 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.back-to-top 
-{
+
+.back-to-top {
   position: fixed;
   bottom: 40px;
   right: calc(40px + 60px);
@@ -145,8 +140,8 @@ body {
   opacity: 0.7;
   transition: opacity 0.3s;
 }
-.back-to-top:hover 
-{
+
+.back-to-top:hover {
   opacity: 1;
 }
 
