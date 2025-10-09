@@ -77,7 +77,7 @@ git push origin improve-feature
 - ⏳ Include more examples or even screenshots / walk through videos
 
 ## 📜 Acknowledgements
-A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for her patience and sharing her wisdom about Version Control to us! Let us make learning Git fun and easy for everyone. 😊🙌
+A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for her patience and sharing her wisdom about Version Control! Let us make learning Git fun and easy for everyone. 😊🙌
 
 ## 🧾 License
 
