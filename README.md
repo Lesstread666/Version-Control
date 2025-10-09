@@ -18,7 +18,7 @@ This is a collaborative project created by our team to help beginners understand
 
 🔗 Check out the live web page here:
 
-👉 [Team Thunderbolts Git Guide]()
+👉 [Team Thunderbolts Git Guide](https://lesstread666.github.io/Version-Control/)
 
 ## 🧰 Tech Stack
 - 🖥️ **HTML5** – For pages and contents structure
@@ -53,21 +53,22 @@ Meet the creators of **Team Thunderbolts** 💥
 We love community contributions! Here is how you can help improve this project:
 
 1. **Fork** the repository
-2. **Create** a new branch
+2. **Clone** the repository
+3. **Create** a new branch
 ```bash 
  git checkout -b improve-feature
 ```
-3. **Make** the appropriate changes and add changes to reflect the changes made
-4. **Commit** your changes
+4. **Make** the appropriate changes and add changes to reflect the changes made
+5. **Commit** your changes
 ```bash 
 git commit -am "Improve feature"
 ```
-5. **Push** to your branch
+6. **Push** to your branch
 ```bash 
 git push origin improve-feature
 ```
 
-6. **Submit** a Pull Request. Click Compare & Pull Request and describe your contribution.
+7. **Submit** a Pull Request. Click Compare & Pull Request and describe your contribution.
 
 💬 _We will review your PR as soon a possible_ 😊
 
@@ -76,7 +77,7 @@ git push origin improve-feature
 - ⏳ Include more examples or even screenshots / walk through videos
 
 ## 📜 Acknowledgements
-A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for sharing her wisdom about Version Control to us! Let us make learning Git fun and easy for everyone. 😊🙌
+A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for her patience and sharing her wisdom about Version Control to us! Let us make learning Git fun and easy for everyone. 😊🙌
 
 ## 🧾 License
 
