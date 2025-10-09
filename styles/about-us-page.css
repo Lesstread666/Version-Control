@@ -63,6 +63,173 @@
   width: 80%;
 }
 
+.animated-text {
+  background-color: #921caa;
+  border-radius: 10px;
+  display: flex;
+  font-family: 'Kaushan Script', Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  margin-top: 20px;
+  min-width: 100px;
+  overflow: hidden;
+  padding: 0.5rem 0rem;
+}
+
+.animated-text span {
+  background: none;
+  margin-left: 0.5rem;
+  position: relative;
+}
+
+.first::before {
+  animation: first 30s infinite;
+  color: #ef36e3;
+  content: "Vlad";
+}
+
+.second::before {
+  animation: second 30s infinite;
+  color: #ef36e3;
+  content: "Imran";
+}
+
+.third::before {
+  animation: third 30s infinite;
+  color: #ef36e3;
+  content: "Michelle";
+}
+
+.animated-text span::after {
+  animation: cursor .8s infinite, typing 30s steps(16) infinite;
+  background-color: #921caa;
+  border-left: 2px solid #ef36e3;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -8px;
+  width: calc(100% + 8px);
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes first {
+
+  0%,
+  20% {
+    content: "Vlad";
+  }
+
+  21%,
+  40% {
+    content: "Winter Soldier";
+  }
+
+  41%,
+  60% {
+    content: "A Chill Guy";
+  }
+
+  61%,
+  80% {
+    content: "A Game Designer";
+  }
+
+  81%,
+  100% {
+    content: "A Gamer";
+  }
+}
+
+@keyframes second {
+
+  0%,
+  20% {
+    content: "Imran";
+  }
+
+  21%,
+  40% {
+    content: "Red Guardian";
+  }
+
+  41%,
+  60% {
+    content: "A Creative Mind";
+  }
+
+  61%,
+  80% {
+    content: "A Learner";
+  }
+
+  81%,
+  100% {
+    content: "A Driven Coder";
+  }
+}
+
+@keyframes third {
+
+  0%,
+  20% {
+    content: "Michelle";
+  }
+
+  21%,
+  40% {
+    content: "Ghost";
+  }
+
+  41%,
+  60% {
+    content: "Outgoing";
+  }
+
+  61%,
+  80% {
+    content: "Solution Driven";
+  }
+
+  81%,
+  100% {
+    content: "Optimistic";
+  }
+}
+
+@keyframes typing {
+
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
 .contents-wrapper p:last-of-type {
   font-size: 1.2rem;
   text-align: center;
