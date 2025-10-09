@@ -37,7 +37,7 @@ This is a collaborative project created by our team to help beginners understand
 - `🌿 branching-page.html ` - Gives information about the importance of making branches , as well as the git commands on how to create and remove a local or remote branch
 - `👥 about-us-page.html ` - Introduces the amazing contributors behind this project
 
-## 👨‍💻 Team Members
+## 🤝 Team Members
 
 Meet the creators of **Team Thunderbolts** 💥
 
@@ -77,7 +77,7 @@ git push origin improve-feature
 - ⏳ Include more examples or even screenshots / walk through videos
 
 ## 📜 Acknowledgements
-A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for her patience and sharing her wisdom about Version Control! Let us make learning Git fun and easy for everyone. 😊🙌
+A big thanks to everyone who shares feedback or uses our Git Guide and especially to our teacher, **Antonella Morittu** for her patience and sharing her wisdom about Version Control to us! Let us make learning Git fun and easy for everyone. 😊🙌
 
 ## 🧾 License
 
