@@ -1,7 +1,7 @@
 :root {
-  ---title-background-color: linear-gradient(90deg, #16a085 0%, #117A66 80%);
-  --title-color: #1F5A52;
-  --box-background-color: linear-gradient(35.7deg, #69eeda 0%, #7264e4 100%);
+  ---title-background-color: linear-gradient(90deg, #83139a 0%, #af1acd 80%);
+  --title-color: #921caa;
+  --box-background-color: linear-gradient(35.7deg, #7264e4 0%, #8143e4 50%, rgb(183, 63, 243) 100%);
   --box-shadow-color: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -9,6 +9,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-image: url("../assets/images/star-background.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .main {
@@ -28,16 +36,6 @@ h1 {
   text-align: center;
   font-family: 'Kaushan Script';
   font-size: 3rem;
-  color: var(--title-color);
-  background: var(---title-background-color);
-  background-clip: text;
-  /* Made acceptable for different browsers */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.sub-title {
-  font-size: 1rem;
   color: var(--title-color);
   background: var(---title-background-color);
   background-clip: text;

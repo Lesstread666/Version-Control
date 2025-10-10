@@ -9,15 +9,14 @@
   <link rel="stylesheet" href="./styles/typography.css" />
   <link rel="stylesheet" href="styles/common-header-footer.css">
   <link rel="stylesheet" href="./styles/common-mainbody.css" />
+</head>
 
-<body>
+<body id="top">
   <header class="header">
-
     <div class="header-logo">
       <a href="index.html" alt="Home Page title">
         <h2>Version Control</h2>
       </a>
-
       <div class="dropdown-mobile">
         <div class="dropdown-icon">
           ^
@@ -30,19 +29,16 @@
         </div>
       </div>
     </div>
-
     <div class="header-navigation">
       <nav class="navigation">
         <ul class="menu-bar">
-          <li><a href="project.html">Project</a></li>
+          <li><a href="project.html" class="active">Project</a></li>
           <li><a href="changespage.html">Changes</a></li>
           <li><a href="branching-page.html">Branching</a></li>
           <li><a href="about-us-page.html">About us</a></li>
         </ul>
       </nav>
     </div>
-
-
   </header>
   <main class="main">
     <h1>Project Page</h1>
@@ -86,7 +82,7 @@ echo "&lt;h1&gt;My Responsive Project&lt;/h1&gt;" > index.html
 git add index.html
 
 git commit -m "Initial commit with index page"
-        </pre>
+      </pre>
         <h3>2. Link a Local Repo to a Remote Repo</h3>
         <pre>
 git remote add origin https://github.com/username/MyResponsiveProject.git
@@ -109,6 +105,6 @@ git push -u origin main
   <footer class="footer">
     <p>&copy;Team_Thunderbolts</p>
   </footer>
+  <a href="#top" class="back-to-top">⬆</a>
 </body>
-
 </html>

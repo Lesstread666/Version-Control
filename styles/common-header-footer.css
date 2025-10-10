@@ -1,9 +1,7 @@
 :root {
-  --header-footer-background-color: linear-gradient(to bottom, #A5CC82, #00467F);
-  --header-footer-title-color: linear-gradient(45deg, #f3f169 0%, #82f369 40%, #91cfff 100%);
-  --header-buttons-background-color: linear-gradient(to right, #3D7EAA 0%, #FFE47A 51%, #3D7EAA 100%);
-  --menu-bar-background-color: linear-gradient(to right, #3D7EAA 0%, #FFE47A 51%, #3D7EAA 100%);
-  --main-body-background-color: linear-gradient(-60deg, #16a085 0%, #88c070 60%, #f4d03f 100%);
+  --header-footer-background-color: radial-gradient(circle farthest-corner at 10% 20%, rgba(117, 86, 204, 1) 0%, rgb(197, 94, 195) 90%);
+  --header-footer-title-color: radial-gradient(circle farthest-corner at 10% 20%, rgb(233, 126, 187) 0%, rgb(233, 108, 179) 50%, rgb(216, 81, 158) 90%);
+  --menu-bar-background-color: linear-gradient(to right, #6a3093 0%, #a044ff 51%, #6a3093 100%);
 }
 
 * {
@@ -14,6 +12,7 @@
 
 html {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,6 +29,10 @@ body {
   padding: 20px 40px;
   margin: 0;
   background: var(--header-footer-background-color);
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  position: sticky;
 }
 
 .header-logo {
@@ -60,6 +63,10 @@ body {
   display: none;
 }
 
+.dropdown-menu a {
+  padding: 10px 0;
+}
+
 .header-navigation {
   margin: 0;
 }
@@ -84,16 +91,21 @@ body {
   transition: 0.5s;
   background-size: 200% auto;
   background-image: var(--menu-bar-background-color);
-  color: white;
-  box-shadow: 0 0 20px #eee;
+  color: rgb(241, 110, 241);
+  box-shadow: 0 0 20px rgb(214, 13, 171);
   border-radius: 10px;
   display: block;
   text-decoration: none;
 }
 
+.menu-bar li a.active {
+  color: rgb(236, 37, 236);
+  font-weight: bold;
+}
+
 .menu-bar a:hover {
   background-position: right center;
-  color: white;
+  color: rgb(237, 127, 237);
   text-decoration: none;
 }
 
@@ -113,6 +125,26 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.back-to-top {
+  background: #333;
+  border-radius: 20%;
+  bottom: 20px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.7;
+  padding: 0 12px;
+  position: fixed;
+  right: calc(40px + 0px);
+  text-decoration: none;
+  transition: opacity 0.3s;
+  z-index: 50;
+}
+
+.back-to-top:hover {
+  opacity: 1;
 }
 
 @media (max-width:768px) {
@@ -180,8 +212,13 @@ body {
     border-radius: 10px;
   }
 
- .dropdown-mobile:hover .dropdown-menu {
+  .dropdown-mobile:hover .dropdown-menu {
     max-height: 500px;
     display: grid;
+  }
+
+  .back-to-top {
+    padding: 0 8px;
+    font-size: 1.5rem;
   }
 }
