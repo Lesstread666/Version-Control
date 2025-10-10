@@ -128,18 +128,19 @@ body {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: calc(40px + 0px);
   background: #333;
-  color: white;
-  padding: 0 12px;
   border-radius: 20%;
+  bottom: 20px;
+  color: white;
   font-size: 2rem;
-  text-decoration: none;
   font-weight: bold;
   opacity: 0.7;
+  padding: 0 12px;
+  position: fixed;
+  right: calc(40px + 0px);
+  text-decoration: none;
   transition: opacity 0.3s;
+  z-index: 50;
 }
 
 .back-to-top:hover {
@@ -216,9 +217,8 @@ body {
     display: grid;
   }
 
-  .back-to-top 
-{
-  padding: 0 8px;
-  font-size: 1.5rem;
-}
+  .back-to-top {
+    padding: 0 8px;
+    font-size: 1.5rem;
+  }
 }
