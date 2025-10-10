@@ -9,6 +9,7 @@
 .about-us-image {
   width: 100%;
   flex: 1.5;
+  border-radius: 10px;
 }
 
 .intro-wrapper {
@@ -45,6 +46,7 @@
   justify-content: space-between;
   max-width: 800px;
   padding: 1rem;
+  z-index: -3;
   width: 100%;
 }
 
@@ -53,14 +55,55 @@
   align-self: center;
 }
 
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --float {
+  syntax: "<length>";
+  initial-value: 0px;
+  inherit: false;
+}
+
+.image-wrapper::after,
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  background: conic-gradient(from var(--angle), rgb(255, 0, 170), rgb(247, 0, 255), rgb(123, 0, 255));
+  z-index: -2;
+  transform: translateY(var(--float)) rotate(var(--angle));
+  animation: float 5s ease-in-out infinite, spin 5s linear infinite;
+}
+
+.image-wrapper::before {
+  filter: blur(2rem);
+  opacity: 0.7;
+  transform: translateY(var(--float)) rotate(var(--angle)) scale(1.1);
+}
+
 .image {
-  animation: float 6s ease-in-out infinite;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: block;
+  border-radius: 10px;
   height: auto;
-  margin-top: 1rem;
   overflow: hidden;
-  transform: translatey(0px);
-  width: 80%;
+  position: relative;
+  z-index: -1;
+  transform: translateY(var(--float));
+  animation: float 5s ease-in-out infinite;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 .animated-text {
@@ -110,6 +153,56 @@
   position: absolute;
   right: -8px;
   width: calc(100% + 8px);
+}
+
+.contents-wrapper p:last-of-type {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.contents-wrapper h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.contents-wrapper h2 {
+  margin: 0.5rem 0rem;
+}
+
+.contents-wrapper p:last-of-type,
+.team-name {
+  font-family: 'Kaushan Script';
+  text-transform: uppercase;
+}
+
+.team-name {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.socials-wrapper {
+  padding: 1rem;
+}
+
+/*over-riding default span styling from mainbody-css*/
+.socials-wrapper span,
+.team-name {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+}
+
+.socials-wrapper span a {
+  color: #921caa;
+  font-size: 2rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    color: #b924d6;
+  }
 }
 
 @keyframes cursor {
@@ -230,71 +323,30 @@
   }
 }
 
-.contents-wrapper p:last-of-type {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.contents-wrapper h3,
-p {
-  margin-bottom: 1rem;
-}
-
-.contents-wrapper h2 {
-  margin: 0.5rem 0rem;
-}
-
-.contents-wrapper p:last-of-type,
-.team-name {
-  font-family: 'Kaushan Script';
-  text-transform: uppercase;
-}
-
-.team-name {
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.socials-wrapper {
-  padding: 1rem;
-}
-
-/*over-riding default span styling from mainbody-css*/
-.socials-wrapper span,
-.team-name {
-  background: none;
-  border-radius: 0;
-  padding: 0;
-}
-
-.socials-wrapper span a {
-  color: #606C38;
-  font-size: 2rem;
-  margin: 0 1rem;
-  text-decoration: none;
-  transition: all 0.4s ease-in-out;
-
-  &:hover {
-    color: #ffffff;
-  }
-
-}
-
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px);
+    transform: translateY(0px);
   }
 
   50% {
     box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-20px);
+    transform: translateY(-20px);
   }
 
   100% {
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px);
+    transform: translateY(0px);
+  }
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
   }
 }
 
